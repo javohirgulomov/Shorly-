@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+/* CUSTOM PROPS */
+
+:root {
+    --blue-dark: #34313D;
+    --blue-purple: #3A3054;
+    --purple: #4B3F6B;
+    --grey: #9E9AA8;
+    --white-grey: #EFF1F7;
+    --blue-green: #2BD0D0;
+    --white: #fff;
+}
+
+
+/* GLOBAL STYLES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style:   none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1156px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: block;
+    padding: 14px 40px 12px;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--white);
+    background-color: var(--blue-green);
+    border-radius: 28px;
+    width: max-content;
+    transition: 0.4s;
+}
+
+    /* BTN ACTIVE */
+
+.btn:hover {
+    background-color: #9ae3e3;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+    /* D-LFEX */
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 120px;
+    height: 32px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.site-header__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.site-header__link {
+    color: var(--grey);
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.site-header__link:hover {
+    color: var(--blue-dark);
+}
+
+.site-header__auth {
+    display: flex;
+    align-items: center;
+    column-gap: 37px;
+}
+
+.site-header__login, .site-header__sign {
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.site-header__login {
+    color: var(--grey);
+}
+
+.site-header__sign {
+    color: var(--white);
+    background-color: var(--blue-green);
+    padding: 8px 23px;
+    display: block;
+    border-radius: 28px;
+    transition: 0.4s;
+}
+
+    /* HOVER */
+
+.site-header__sign:hover {
+    box-shadow: 0 0 5px var(--blue-green);
+    cursor: pointer;
+}
+/* ACTIVE */
+.site-header__sign:active {
+    background-color: #9AE3E3;
+}
+
+/* SITE-HERO */
+
+.site-hero {
+    position: relative;
+}
+
+.site-hero__banner {
+    position: absolute;
+    right: 0;
+}
+
+.site-title {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 90px;
+    color: var(--blue-dark);
+    letter-spacing: -2px;
+    max-width: 565px;
+    width: 100%;
+}
+
+.site-desc {
+    color: var(--grey);
+    max-width: 540px;
+    width: 100%;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    margin-top: 5px;
+    margin-bottom: 38px;
+}
+
+/* SITE-HERO */
